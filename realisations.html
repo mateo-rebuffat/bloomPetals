@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisations - BloomPetals</title>
+<style>
+
+  /* Couleur de body */
+  body {
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(45deg, #48BEFF, #48BEFF 20px, #3DFAFF 20px, #3DFAFF 40px);
+}
+
+/* Style de la barre de navigation */
+    header {
+        background-color: #051923;
+        padding: 5px 0;
+        display: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+/* Centrer le texte Nav barre */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    width: 100%; /* Utilisez toute la largeur disponible */
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #3D7068;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Réinitialisation des marges et des rembourrages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles spécifiques main texte */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+  /* Styles texte Description */
+  .texte-box {
+    background-color: #48BEFF; /* Couleur de fond de la boîte */
+    padding: 10px; /* Espacement intérieur de la boîte */
+    border: 5px solid #3DFAFF; /* Bordure */
+    border-radius: 10px; /* Coins arrondis */
+    max-width: 450px; /* Largeur maximale */
+    margin: 0 auto 20px; /* Espacement */
+}
+.texte-box p {
+    font-family: "Times New Roman", serif; /* Police de texte */
+    font-size: 20px; /* Taille de police */
+    line-height: 1.6; /* Espacement entre les lignes */
+    color: #051923; /* Couleur du texte */
+}
+
+/* Style pour la mosaïque */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif; /* Police de texte */}
+
+/* align la box choix des tailles */
+.header {
+  text-align: center;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Crée deux colonnes égales l'une à côté de l'autre */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Styliser les boutons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #051923;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #f1f1f1;
+}
+
+.btn.active {
+  background-color: #3DFAFF;
+  color: #fff;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #051923;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+</style>
+</head>
+<body>
+    <div class="header">
+    <!-- En-tête de la page -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <input placeholder="Search" class="input" name="text" type="text">
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <!-- Titre de la page -->
+    <h1>Nos Réalisations</h1>
+      <!-- Réalisation -->
+      <div class="texte-box">
+          <p>Vous pouvez utiliser les boutons ci-dessous pour changer la disposition des réalisations affichées.</p>
+      </div>
+    <!-- Header -->
+    <div class="header" id="myHeader">
+        <button class="btn" onclick="one()">Grand</button>
+        <button class="btn active" onclick="two()">Moyen</button>
+        <button class="btn" onclick="four()">Mosaïque</button>
+    </div>
+<!-- Photo -->
+<div class="row">
+    <div class="column">
+        <img src="https://drive.google.com/uc?id=1gYabhcsfWUa-HYeXQGbTiksrnT2VaCNp" style="width:100%">
+        <img src="https://drive.google.com/uc?id=1kEonA0BB7Jk1fItcnqVcaTVNxz9p_Vwj" style="width:100%">
+        <img src="https://drive.google.com/uc?id=1sarIh3uFC_D6ebkkfqofubpQoV2jeQSx" style="width:100%">
+        <img src="https://drive.google.com/uc?id=1idSJGZcLLp9mHxDTl5KbcxhVe0zj8reX" style="width:100%">
+        <img src="https://drive.google.com/uc?id=16dZiCwxH9Euo0kTKlKc5G2X2wCVCygri" style="width:100%">
+        <img src="https://drive.google.com/uc?id=1GRCoQFcb2cZUVIE6F3l8abv9mxeYsPYm" style="width:100%">
+        <img src="https://drive.google.com/uc?id=1JUpp_wZ6uJtDXkOQxKjlLt8zfwCgR2_A" style="width:100%">
+        <img src="https://drive.google.com/uc?id=1JGCTZimZVmoXpczl9DaCmH0z6MdNytgX" style="width:100%">
+        <img src="https://drive.google.com/uc?id=1I5jfIqpkQM8fnUPJ3sQ09LnmcR8Pwtii" style="width:100%">

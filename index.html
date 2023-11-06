@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomPetals - Accueil</title>
+    <style>
+        /* Réinitialisation des marges et des rembourrages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de la barre de navigation */
+header {
+        background-color: #48BEFF;
+        padding: 5px 0;
+        display: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+/* Centrer le texte Nav barre */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    width: 100%; /* Utilisez toute la largeur disponible */
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #3DFAFF;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Style de la description de l'entreprise */
+p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style des sections des services */
+.service {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styles pour les images */
+.container img {
+    width: 200px;
+    height: 145px;
+    object-fit: cover; /* Évite que l'image ne se déforme */
+    display: block;
+    margin: 0 auto; /* Centre l'image dans son conteneur */
+}
+
+/* Taille du cadre autour de l'image */
+.box {
+    width: 210px;
+    height: 155px;
+    border: 1px solid #051923; /* Bordure noire autour de la boîte */
+    margin-bottom: 10px; /* Espacement entre les boîtes */
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+}
+
+/* Style des 3 services côte à côte */
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #3D7068;
+    text-align: center;
+}
+
+/* Style du pied de page (optionnel) */
+footer {
+    background-color: #90BE6D;
+    color: #3D7068;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* images positions */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+.box {
+    background-color: #48BEFF;
+    padding: 0px;
+    text-align: center;
+    border: 0px solid #48BEFF;
+}
+.input {
+    margin: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    max-width: 190px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 9999px;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+    color: #3D7068;
+  }
+
+  /* hr marges CSS */
+
+hr {
+    margin-top: 20px; /* Ajoute un espace en haut de la séparation */
+    margin-bottom: 20px; /* Ajoute un espace en bas de la séparation */
+    border: none; /* Supprime le bord de la séparation */
+    border-top: 1px solid #ccc; /* Ajoute une ligne horizontale */
+}
+/* Style du titre de l'entreprise */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+    color: #333; /* Couleur du texte */
+    font-family: "Comic Sans MS", sans-serif; /* Police */
+}
+
+
+    </style>
+</head>
+
+<body>
+    <!-- En-tête de la page -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <input placeholder="Search" class="input" name="text" type="text">
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Titre principal -->
+    <h1>BloomPetals</h1>
+
+    <!-- Description de l'entreprise -->
+    <p>Chez BloomPetals, nous croyons que chaque célébration mérite d'être parée de la beauté
+        naturelle des fleurs. Nous sommes une entreprise passionnée et créative spécialisée dans
+        la confection de magnifiques bouquets floraux pour embellir vos événements spéciaux. Que
+        ce soit un mariage, un anniversaire, une réception ou toute autre occasion festive, nos
+        artisans floraux talentueux travaillent avec dévouement pour créer des arrangements
+        uniques et époustouflants qui émerveilleront vos invités.</p>
+    <!-- Séparation -->
+    <hr>
+    
+    <!-- Images -->
+    <div class="container">
+        <div class="box">
+            <img src="image1.jpg" alt="Image 1">
+        </div>
+        <div class="box">
+            <img src="image2.jpg" alt="Image 2">
+        </div>
+        <div class="box">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+        <div class="box">
+            <img src="image4.jpg" alt="Image 4">
+        </div>
+    </div>
+    <!-- Séparation -->
+    <hr>
+    <!-- Services proposés -->
+    <section class="services">
+        <div class="service">
+            <h2>Création de bouquets personnalisés</h2>
+            <p>BloomPetals offre un service de création de
+                bouquets floraux entièrement personnalisés pour toutes les occasions. Que ce soit pour un
+                mariage élégant, un anniversaire chaleureux ou un événement d'entreprise sophistiqué,
+                notre équipe d'artisans floraux talentueux travaille en étroite collaboration avec les clients.
+                pour concevoir des arrangements sur mesure, adaptés à leurs goûts et à l'ambiance de
+                l'événement.</p>
+        </div>
+        <div class="service">
+            <h2>Décoration Florale d'Événements</h2>
+            <p>Notre équipe de professionnels se spécialise dans
+                la décoration florale d'événements. Nous transformons les lieux de fêtes en espaces
+                enchanteurs en utilisant des fleurs fraîches et luxuriantes. Des centres de table élégants aux
+                arches florales majestueuses, nous concevons des décors floraux qui éblouissent et
+                captivent les invités. Notre service comprend également la livraison, l'installation et la
+                décoration sur place pour garantir une expérience sans stress pour nos clients.</p>
+        </div>
+        <div class="service">
+            <h2>Ateliers de Composition Florale</h2>
+            <p>En plus de nos services de décoration et de création
+                de bouquets, BloomPetals propose des ateliers de composition florale interactifs. Ces
+                ateliers sont parfaits pour les amateurs de fleurs et les passionnés de design floral. Nos
+                experts partagent leurs connaissances et leurs compétences, guidant les participants dans
+                la création de leurs propres arrangements floraux. C'est une expérience enrichissante et
+                ludique, idéale pour les événements d'entreprise, les enterrements de vie de jeune fille ou
+                les fêtes privées. Les participants repartent avec leurs créations florales uniques et des
+                souvenirs mémorables de l'atelier.</p>
+        </div>
+    </section>
+    <!-- Séparation -->
+    <hr>
+    <!-- Images -->
+    <div class="container">
+        <div class="box">
+            <img src="image5.jpg" alt="Image 5">
+        </div>
+        <div class="box">
+            <img src="image6.jpg" alt="Image 6">
+        </div>
+        <div class="box">
+            <img src="image7.jpg" alt="Image 7">
+        </div>
+        <div class="box">
+            <img src="image8.jpg" alt="Image 8">
+        </div>
+    </div>
+ 
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2023 BloomPetals. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>

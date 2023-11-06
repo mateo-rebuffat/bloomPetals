@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Équipe - BloomPetals</title>
+    <style>
+/* Style pour les écrans */
+.team-member {
+    text-align: center;
+    max-width: 150px; /* Ajustez la largeur selon vos besoins */
+    min-width: 200px; /* Ajout de la largeur minimale */
+    margin: 10px;
+    padding: 10px;
+}
+/* Style pour les grands écrans */
+@media screen and (min-width: 1200px) {
+    .team-members {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 20px;
+        justify-items: center;
+    }
+
+    .team-member {
+        text-align: center;
+        max-width: 150px; /* Ajustez la largeur selon vos besoins */
+    }
+}
+
+/* Style pour les écrans moyens */
+@media screen and (max-width: 1199px) {
+    .team-members {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-member {
+        text-align: center;
+        width: 30%; /* Ajustez la largeur selon vos besoins */
+        margin: 10px;
+    }
+}
+
+/* Style pour les petits écrans */
+@media screen and (max-width: 768px) {
+    .team-members {
+        grid-template-columns: repeat(1, 1fr); /* Change à une colonne pour les écrans de 768px ou moins */
+    }
+
+    .team-member img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+  /* Couleur de body */
+  body {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(45deg, #051923, #051923 20px, #3D7068 20px, #3D7068 40px);
+}
+/* team-member img */
+.team-member img {
+    width: 150px; /* Taille de l'image */
+    height: 150px; /* Hauteur de l'image */
+    object-fit: cover; /* Évite la déformation de l'image */
+    border: 5px solid #80b19b; /* Cadre de 5 pixels de couleur #333 */
+    border-radius: 50%; /* Coins arrondis pour un effet circulaire */
+}
+
+.member1 {
+    background-color: #051923; /* Couleur d'arrière-plan pour le membre 1 (Or) */
+}
+
+.member2 {
+    background-color: #051923; /* Couleur d'arrière-plan pour le membre 2 (Bleu turquoise) */
+}
+.member3 {
+    background-color: #051923; /* Couleur d'arrière-plan pour le membre 1 (Or) */
+}
+
+.member4 {
+    background-color: #051923; /* Couleur d'arrière-plan pour le membre 2 (Bleu turquoise) */
+}
+.member5 {
+    background-color: #051923; /* Couleur d'arrière-plan pour le membre 1 (Or) */
+}
+
+.member6 {
+    background-color: #051923; /* Couleur d'arrière-plan pour le membre 2 (Bleu turquoise) */
+}
+
+
+/* Space evenly member staff */
+.team-members {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Utilisez "repeat(6, 1fr)" pour 6 colonnes égales */
+    grid-gap: 20px; /* Espacement entre les membres de l'équipe */
+    justify-items: center; /* Centre les éléments horizontalement */
+    justify-content: space-evenly; /* Espace équitablement les éléments horizontalement */
+    margin: 0 auto; /* Centre le contenu par rapport aux bords de la page */
+    max-width: 1200px; /* Limite la largeur de la section à 1200px */
+    padding: 0 20px; /* Ajoute un peu d'espacement sur les côtés de la section */
+}
+
+/* Réinitialisation des marges et des rembourrages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style de la barre de navigation */
+header {
+    background-color: #051923;
+    padding: 5px 0;
+    display: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Ajoutez ces styles pour centrer le texte */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    width: 100%; /* Utilisez toute la largeur disponible */
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Style du titre de l'entreprise */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+/* Style de la description de l'entreprise */
+p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Styles pour les images */
+.container img {
+    width: 200px;
+    height: 145px;
+    object-fit: cover; /* Évite que l'image ne se déforme */
+    display: block;
+    margin: 0 auto; /* Centre l'image dans son conteneur */
+}
+
+/* images positions flex */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+  /* Styles texte team description */
+.team-description-box {
+    background-color: #051923; /* Couleur de fond de la boîte */
+    padding: 10px; /* Espacement intérieur de la boîte */
+    border: 5px solid #3D7068; /* Bordure de 5 pixels de couleur #2cac12 */
+    border-radius: 10px; /* Coins arrondis */
+    max-width: 600px; /* Largeur maximale de la boîte */
+    margin: 0 auto 20px; /* Espacement autour de la boîte */
+}
+.team-description-box p {
+    font-family: "Times New Roman", serif; /* Police de texte */
+    font-size: 20px; /* Taille de police */
+    line-height: 1.6; /* Espacement entre les lignes */
+    color: #3D7068; /* Couleur du texte */
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #051923;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+       <!-- En-tête de la page -->
+       <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <input placeholder="Search" class="input" name="text" type="text">
+            </ul>
+        </nav>
+    </header>
+</div>
+
+<div class="main-content">
+
+<!-- Titre de la page -->
+<h1>Notre Équipe</h1>
+
+    <!-- Description de l'équipe -->
+    <div class="team-description-box">
+        <p>Nous sommes une équipe passionnée de fleurs et de design floral. Chacun d'entre nous apporte son expertise unique pour créer des arrangements floraux exceptionnels qui émerveillent nos clients.</p>
+    </div>
+
+<!-- Description de l'équipe et Photos de l'équipe -->
+<section class="team-members flex-container">
+
+    <!-- Membres de l'équipe -->
+    <div class="team-member member1">
+        <img src="https://drive.google.com/uc?id=1LIjk0JHHX9IYSFWsQ1bXAFMcP6UPePJb" alt="Membre de l'équipe 1">
+        <p>Absinthe</p>
+        <p>Rôle : Maître des Bouquets</p>
+        <p>Absinthe est notre expert en arrangements floraux, capable de transformer n'importe quelle fleur en une œuvre d'art. Quand il ne jongle pas avec les pétales, vous le trouverez probablement en train de discuter avec les plantes, les encourageant à s'épanouir.</p>
+    </div>
+
+    <div class="team-member member2">
+        <img src="https://drive.google.com/uc?id=1xbyqhu_kxBadT6KM6ELsYp-rUlus99Z1" alt="Membre de l'équipe 1">
+        <p>Bégonia</p>
+        <p>Rôle : Directrice Artistique</p>
+        <p>Bégonia apporte une touche de magie à chaque création. Ses idées originales et son sens aigu du design transforment nos arrangements en véritables chef-d'œuvres. En dehors du travail, elle est une experte en chansons de plantes.</p>
+    </div>
+
+    <div class="team-member member3">
+        <img src="https://drive.google.com/uc?id=11f_RFjZOeDlSJ_W2K12T7JMpCyVbPO_r" alt="Membre de l'équipe 1">
+        <p>Camélia</p>
+        <p>Rôle : Magicienne des Pétales</p>
+        <p>Camélia a un don spécial pour faire fleurir même les fleurs les plus timides. Elle est la responsable des magnifiques compositions que vous voyez dans notre vitrine. Lorsqu'elle ne travaille pas avec les fleurs, elle aime cultiver des jardins de contes de fées.</p>
+    </div>
+
+    <div class="team-member member4">
+        <img src="https://drive.google.com/uc?id=1M4LiBm8iE47ACJ4XHrJXIH4qfKIz8gRG" alt="Membre de l'équipe 1">
+        <p>Dahlia</p>
+        <p>Rôle : Designer Floral</p>
+        <p>Dahlia est notre experte en combinaisons de couleurs et en styles innovants. Elle crée des arrangements qui éblouissent et inspirent. En dehors du travail, vous la trouverez probablement en train d'explorer des jardins botaniques à la recherche de nouvelles inspirations.</p>
+    </div>
+
+    <div class="team-member member5">
+        <img src="https://drive.google.com/uc?id=1dKDWd28PUze1BZFcGt74QYidNzJmtL0g" alt="Membre de l'équipe 1">
+        <p>Edelweiss</p>
+        <p>Rôle : Architecte Végétal</p>
+        <p>Edelweiss a une passion pour les formes et les structures dans les compositions florales. Son attention aux détails garantit que chaque arrangement est une œuvre d'art précise et équilibrée. En dehors du travail, elle aime escalader des montagnes à la recherche de nouvelles espèces de fleurs.</p>
+    </div>
+
+    <div class="team-member member6">
+        <img src="https://drive.google.com/uc?id=1eJVD0cfHyTPOFkovUMiHz0ByK2IXC246" alt="Membre de l'équipe 1">
+        <p>Magic Mike</p>
+        <p>Rôle : Maître des Sortilèges Botaniques</p>
+        <p>Magic Mike possède un talent extraordinaire pour donner vie aux plantes. Il sait exactement quel sort utiliser pour faire pousser des roses dans le désert. En dehors du travail, il est passionné par les potions à base de plantes et la recherche de nouveaux pouvoirs botaniques.</p>
+    </div>
+</div>
+
+<!-- Ajoutez plus de membres au besoin -->
+</section>
+
+<div class="footer">
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2023 BloomPetals. Tous droits réservés.</p>
+    </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - BloomPetals</title>
+<style>
+
+  /* Couleur de body */
+  body {
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(45deg, #051923, #051923 20px, #3D7068 20px, #3D7068 40px);
+}
+
+/* Style de la barre de navigation */
+    header {
+        background-color: #3DFAFF; /* Couleur modifiée */
+        padding: 5px 0;
+        display: center;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+}
+
+/* Centrer le texte Nav barre */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    width: 100%; /* Utilisez toute la largeur disponible */
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Réinitialisation des marges et des rembourrages */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles spécifiques à la page de contact */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+.contact-form {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    text-align: left;
+}
+
+.contact-form label,
+.contact-form textarea,
+.contact-form input[type="email"] {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #051923; /* Couleur modifiée */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+  /* Styles texte Contactez-nous */
+.contactez-nous-box {
+    background-color: #3DFAFF; /* Couleur modifiée */
+    padding: 10px; /* Espacement intérieur de la boîte */
+    border: 5px solid #051923; /* Couleur modifiée */
+    border-radius: 10px; /* Coins arrondis */
+    max-width: 600px; /* Largeur maximale de la boîte */
+    margin: 0 auto 20px; /* Espacement autour de la boîte */
+}
+.contactez-nous-box p {
+    font-family: "Times New Roman", serif; /* Police de texte */
+    font-size: 20px; /* Taille de police */
+    line-height: 1.6; /* Espacement entre les lignes */
+    color: #051923; /* Couleur modifiée */
+}
+
+/* Style du pied de page */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #3DFAFF; /* Couleur modifiée */
+    color: #fff; /* Couleur du texte */
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header">
+    <!-- En-tête de la page -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="entreprise.html">Entreprise</a></li>
+                <li><a href="realisations.html">Réalisations</a></li>
+                <input placeholder="Search" class="input" name="text" type="text">
+            </ul>
+        </nav>
+    </header>
+    </div>
+
+    <div class="main-content">
+        
+        <!-- Titre de la page -->
+        <h1>Contactez-nous</h1>
+            <!-- Contact -->
+            <div class="contactez-nous-box">
+                <p>Nous apprécions énormément vos commentaires et suggestions. Votre opinion compte beaucoup pour nous et nous aide à améliorer nos services. Si vous avez des idées, des questions ou des commentaires à partager, n'hésitez pas à nous contacter. Nous sommes impatients de vous entendre !</p>
+            </div>
+
+        <!-- Formulaire de contact -->
+        <section class="contact-form">
+            <form action="traitement.php" method="post">
+                <label for="civilite">Civilité :</label>
+                    <select id="civilite" name="civilite">
+                        <option value="Monsieur">Monsieur</option>
+                        <option value="Madame">Madame</option>
+                        <option value="Autre">Autre</option>
+                    </select><br><br>                
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom"><br><br>
+                        
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom"><br><br>
+                        
+                        <label for="adresse">Adresse postale :</label>
+                        <input type="text" id="adresse" name="adresse"><br><br>
+                    
+                        <label for="politique">Accepter les politiques de confidentialité :</label>
+                        <input type="checkbox" id="politique" name="politique" value="accepte"><br><br>
+                        
+                        <label for="message">Message :</label><br>
+                    <textarea id="message" name="message" required></textarea><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </div>
+
+    <div class="footer">
+        <!-- Pied de page -->
+        <footer>
+            <p>&copy; 2023 BloomPetals. Tous droits réservés.</p>
+        </footer>
+    </div>
+</body>
+</html>
